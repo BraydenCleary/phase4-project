@@ -1,0 +1,7 @@
+<% @notes.each do |note| %>
+	<%= note.content %>
+<% end %>
+
+<%= form_for @note do |f| %>
+	<%= f.text_field :content, :placeholder => 'enter text here' %>
+<% end %>
